@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "blink_example_main.c"
+        "cmd_i2ctools.c"
+        "iic_test.c"
+        "sc7u22/sc7u22.c"
+        "i2s_es8311/i2s_es8311.c"
+        "i2s_es8311/es8311.c"
+        "ws1850s/ws1850_iic.c"
+        "ws1850s/nfc.c"
+        "ws1850s/iso14443b.c"
+    INCLUDE_DIRS
+        "."
+        "sc7u22"
+        "i2s_es8311"
+        "ws1850s"
+    EMBED_FILES
+        "i2s_es8311/canon.pcm"
+)
